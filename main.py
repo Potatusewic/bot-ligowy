@@ -59,9 +59,9 @@ async def on_error(event, *args, **kwargs):
 if __name__ == "__main__":
     try:
         keep_alive()  # Uruchom serwer Flask
+        print("Bot jest uruchomiony!")  # Dodanie logu o uruchomieniu bota
         bot.run(TOKEN)  # Uruchom bota
     except discord.LoginFailure:
         print("Błąd logowania: Niewłaściwy token.")
     except Exception as e:
         print(f"Wystąpił nieoczekiwany błąd: {e}")
-
