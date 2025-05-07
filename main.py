@@ -12,11 +12,14 @@ logging.basicConfig(level=logging.DEBUG)
 # Ładowanie zmiennych środowiskowych
 load_dotenv()
 
-# Sprawdź, czy token został załadowany z .env
+# Sprawdzenie, czy token został załadowany z .env
 TOKEN = os.getenv("TOKEN")
 if not TOKEN:
     print("Błąd: Token bota nie został znaleziony w zmiennych środowiskowych!")
     exit(1)
+
+# Sprawdzenie, czy token jest poprawnie załadowany
+print("Bot token:", TOKEN)
 
 # Konfiguracja bota
 intents = discord.Intents.default()
