@@ -1,0 +1,11 @@
+# Ignorowanie pliku .env z tokenem bota
+.env
+
+# Ignorowanie folderu z zależnościami (np. virtualenv)
+venv/
+
+# Ignorowanie plików IDE, np. VSCode
+.vscode/
+
+# Ignorowanie plików systemowych
+.DS_Store
